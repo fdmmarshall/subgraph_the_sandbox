@@ -1,0 +1,16 @@
+{
+  "name": "the-sandbox-subgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.studio.thegraph.com/deploy/ the-sandbox-subgraph",
+    "create-local": "graph create --node http://localhost:8020/ the-sandbox-subgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ the-sandbox-subgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 the-sandbox-subgraph"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.25.1",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
