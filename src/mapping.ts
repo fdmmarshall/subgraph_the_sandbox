@@ -12,7 +12,9 @@ import {
   SuperOperator,
   AdminChanged,
   ExecutionAdminAdminChanged,
-  ExecutionOperator
+  ExecutionOperator,
+  Token,
+  User
 } from "../generated/schema"
 
 export function handleTransfer(event: TransferEvent): void {
